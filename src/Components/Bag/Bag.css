@@ -1,0 +1,79 @@
+.bag-titles{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.bag-titles ul {
+    margin-top: 50px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.bag .bag-total{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: Playfair Display, serif;
+    position: absolute;
+    right: 100px;
+}
+.check-out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+    position:absolute;
+    top: 60%;
+    right:45%;
+}
+.check-out h2 {
+  font-size: 2vw;
+}
+
+.check-out button{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: Open Sans Condensed;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 50px;
+    justify-content: center;
+    letter-spacing: .5px;
+    line-height: 50px;
+    min-width: 165px;
+    padding: 0 35px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+@media (max-width:900px) {
+    .bag-titles ul{
+        font-size: 16px;
+    }
+
+    .bag .bag-total{
+       top: 30%;
+       right: 30px;
+       font-size: 3.5vh;
+    }
+    .check-out {
+        position:absolute;
+        top: 45%;
+        right: 25%;
+    }
+    .check-out h2{
+        font-size: 30px;
+    }
+}

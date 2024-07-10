@@ -1,0 +1,72 @@
+.shop-card-pack{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+}
+
+.shop-card-pack .shop-cards{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 400px;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.shop-card-pack .shop-cards img {
+    max-width:300px;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.shop-card-pack .shop-cards .shop-card-btn{
+    position: absolute;
+    top: 40%;
+}
+
+
+.shop-card-pack .shop-cards  button{
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+.shop-card-pack .shop-cards:hover button{
+    opacity: 0.8;
+}
+
+.shop-card-info{
+    margin-top: 10px;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 1.8vw;
+}
+
+
+@media (max-width:900px) {
+
+    .shop-card-pack{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .shop-card-pack .shop-cards img {
+        max-width:240px;
+        height: 300px;
+    }
+    .shop-card-pack .shop-cards{
+        margin-bottom: 0px;
+    }
+    .shop-card-info{
+        justify-content: space-evenly;
+        font-size: 5vw;
+    }
+}

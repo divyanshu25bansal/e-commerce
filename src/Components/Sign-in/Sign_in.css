@@ -1,0 +1,133 @@
+.account-page{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Playfair Display", serif;
+}
+
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-title {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.sign-in-title h1 ,
+.create-account h1{
+    font-size: 25px;
+}
+
+.sign-in-title p {
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+.sign-in-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.sign-in-details input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid  #ccccccc9;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sign-in-details input:nth-child(2){
+    background-color: rgba(0, 0, 255, 0.083);
+}
+.sign-in-btn{
+    display: flex;
+    justify-content: space-around;
+}
+.sign-in-btn button:nth-child(1){
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+}
+.sign-in-btn button:nth-child(2){
+    border: none;
+    outline: none;
+    background-color:#4285f4;;
+    color: white;
+    padding: 15px 30px;
+    font-family: Open Sans Condensed;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+}
+
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-title{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.create-title p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.create-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.create-details input{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid  #ccccccc9;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.create-account button {
+    margin: auto;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    font-family: Open Sans Condensed;
+}
+
+
+
+@media (max-width:900px) {
+    .account-page {
+        gap: 40px;
+        flex-direction: column;
+    }
+}
